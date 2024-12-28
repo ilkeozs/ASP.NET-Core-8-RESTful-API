@@ -38,12 +38,12 @@ The project demonstrates the application of advanced API development techniques 
 
 ---
 
-## 📂 Repository Contents
-- `/Example.ApplicationLayer` - Contains application-level logic and services.  
-- `/Example.Database` - Handles database configurations and migrations.  
-- `/Example.DomainLayer` - Includes core domain entities and business rules.  
-- `/Example.Test` - Contains unit tests for the application.  
-- `/Example.ViewModel` - Manages data transfer objects (DTOs) and view models.
+## 📂 Repository Contents  
+- `/Example.ApplicationLayer`  
+- `/Example.Database`  
+- `/Example.DomainLayer`  
+- `/Example.Test`  
+- `/Example.ViewModel`
 
 ---
 

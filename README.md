@@ -1,5 +1,5 @@
-# 🎉 Building RESTful APIs with ASP.NET Core 8 🎉  
-This project showcases my journey of mastering modern, scalable, and maintainable Web API development using .NET 8. It is built upon the principles and best practices learned during the course.  
+# 🎉 Building RESTful APIs with ASP.NET Core 8 🎉
+This project showcases my journey of mastering modern, scalable, and maintainable Web API development using .NET 8. It is built upon the principles and best practices of professional API development.
 
 ## 🚀 Project Overview  
 This repository contains a RESTful API developed with a focus on:  
@@ -38,12 +38,12 @@ The project demonstrates the application of advanced API development techniques 
 
 ---
 
-## 📂 Repository Contents
-- `/Example.ApplicationLayer` - Contains application-level logic and services.  
-- `/Example.Database` - Handles database configurations and migrations.  
-- `/Example.DomainLayer` - Includes core domain entities and business rules.  
-- `/Example.Test` - Contains unit tests for the application.  
-- `/Example.ViewModel` - Manages data transfer objects (DTOs) and view models.
+## 📂 Repository Contents  
+- `/Example.ApplicationLayer`  
+- `/Example.Database`  
+- `/Example.DomainLayer`  
+- `/Example.Test`  
+- `/Example.ViewModel`
 
 ---
 

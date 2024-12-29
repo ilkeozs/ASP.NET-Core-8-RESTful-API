@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Auth0.ManagementApi" Version="7.30.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Example.Database\Example.Database.csproj" />
     <ProjectReference Include="..\Example.DomainLayer\Example.DomainLayer.csproj" />
     <ProjectReference Include="..\Example.ViewModel\Example.ViewModel.csproj" />

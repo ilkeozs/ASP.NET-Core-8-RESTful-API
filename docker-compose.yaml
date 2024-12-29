@@ -9,15 +9,23 @@ services:
       - private_network
 
   db:
-    image: postgres:15
+    image: postgres:latest
+    ports:
+      - "5432:5432"
     environment:
       POSTGRES_USER: postgres
+      PGUSER: postgres
       POSTGRES_PASSWORD: 089077
       POSTGRES_DB: TestDB
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
-      - private_network
+      - private_network 
+    healthcheck:
+     test: ["CMD-SHELL", "pg_isready -d TestDB -U postgres"]
+     interval: 1s
+     timeout: 5s
+     retries: 10
 
 networks:
   private_network:

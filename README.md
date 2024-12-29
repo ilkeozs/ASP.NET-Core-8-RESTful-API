@@ -1,5 +1,5 @@
-# 🎉 Building RESTful APIs with ASP.NET Core 8 🎉  
-This project showcases my journey of mastering modern, scalable, and maintainable Web API development using .NET 8. It is built upon the principles and best practices learned during the course.  
+# 🎉 Building RESTful APIs with ASP.NET Core 8 🎉
+This project showcases my journey of mastering modern, scalable, and maintainable Web API development using .NET 8. It is built upon principles and best practices for professional-grade applications.
 
 ## 🚀 Project Overview  
 This repository contains a RESTful API developed with a focus on:  

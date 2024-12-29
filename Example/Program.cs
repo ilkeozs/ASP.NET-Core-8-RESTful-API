@@ -119,7 +119,7 @@ using (var scope = app.Services.CreateScope())
     }
     catch (Exception exp)
     {
-        Console.WriteLine("\nDB Connect Failure\n");
+        Console.WriteLine($"\nDB Connect Failure: {exp.Message}\n");
     }
 }
 

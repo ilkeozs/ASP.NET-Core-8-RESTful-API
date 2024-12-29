@@ -88,9 +88,9 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-const string connectionString = "Server=DESKTOP-N6SQSCT;Database=ExampleDB;Integrated Security=true;TrustServerCertificate=true;";
+const string connectionString = "Host=db;Database=TestDB;Username=postgres;Password=089077;Port=5432;";
 
-builder.Services.AddDbContext<Context>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<Context>(options => options.UseNpgsql(connectionString));
 
 builder.Services.AddTransient<ICityService, CityService>();
 builder.Services.AddTransient<ICityRepository, CityRepository>();

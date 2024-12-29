@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - private_network
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 089077
+      POSTGRES_DB: TestDB
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - private_network
+
+networks:
+  private_network:
+    driver: bridge
+
+volumes:
+  postgres_data:

@@ -5,9 +5,9 @@ namespace Example.Database;
 
 public sealed class ContextFactory : IDesignTimeDbContextFactory<Context>
 {
-public Context CreateDbContext(string[] args)
+    public Context CreateDbContext(string[] args)
     {
-        const string connectionString = "Server=DESKTOP-N6SQSCT;Database=ExampleDB;Integrated Security=true;TrustServerCertificate=true;";
-        return new Context(new DbContextOptionsBuilder<Context>().UseSqlServer(connectionString).Options);
+        const string connectionString = "Host=db;Database=TestDB;Username=postgres;Password=089077;Port=5432;";
+        return new Context(new DbContextOptionsBuilder<Context>().UseNpgsql(connectionString).Options);
     }
 }

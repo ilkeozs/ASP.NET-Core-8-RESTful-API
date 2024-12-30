@@ -1,0 +1,1 @@
+2024-12-22 22:34:55.874 +03:00 [ERR] Unable to resolve service for type 'Example.ApplicationLayer.Auths.IAuthService' while attempting to activate 'Example.Controllers.AuthController'.

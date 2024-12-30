@@ -9,6 +9,7 @@ using Example.Middleware;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -27,6 +28,8 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddDefaultTokenProviders();
 
 var jwtSettings = builder.Configuration.GetSection("JWT");
+
+builder.Services.AddMemoryCache();
 
 builder.Services.AddAuthentication(options =>
 {

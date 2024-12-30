@@ -1,0 +1,15 @@
+#docker-compose up --build
+version: '3.8'
+
+services:
+  exampleproject:
+    image: example_image
+    container_name: example_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    command: ["dotnet", "Example.dll"]

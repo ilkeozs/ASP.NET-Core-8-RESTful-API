@@ -102,11 +102,12 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    await ContextSeed.CreateIdmAdminUser(services);
-}
+// Commented for Docker
+//using (var scope = app.Services.CreateScope())
+//{
+//    var services = scope.ServiceProvider;
+//    await ContextSeed.CreateIdmAdminUser(services);
+//}
 
 using (var scope = app.Services.CreateScope())
 {
@@ -124,13 +125,14 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || true) // true for Docker
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// Commented for Docker
+//app.UseHttpsRedirection();
 
 app.UseAuthentication();
 

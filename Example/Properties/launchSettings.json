@@ -31,13 +31,11 @@
     "Container (Dockerfile)": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
-      "environmentVariables": {
-        "ASPNETCORE_HTTPS_PORTS": "8081",
-        "ASPNETCORE_HTTP_PORTS": "8080"
-      },
-      "publishAllPorts": true,
-      "useSSL": true
+      "launchUrl": "swagger",
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:8080",
+      "publishAllPorts": false,
+      "useSSL": false
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",

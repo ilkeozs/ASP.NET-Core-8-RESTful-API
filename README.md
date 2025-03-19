@@ -50,6 +50,8 @@ The project demonstrates the application of advanced API development techniques 
 ## 📸 Project Screenshot
 ![](Example/Images/image_1.png)
 
+![](Example/Images/image_2.png)
+
 ---
 
 ## 🌟 Let’s connect!  
